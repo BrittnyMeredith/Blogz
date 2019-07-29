@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+
+
+
+{% block content %}
+{% for user in users %}
+        <h1>   <a href="/?id={{user.id}}">{{user.User_name}}</a> </h1>
+{% endfor %}
+{% endblock %}

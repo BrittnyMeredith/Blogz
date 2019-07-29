@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Your Blog Here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/login" class="w3-bar-item w3-button"><b></b> Login</a>
+    <a href="/new_post"class="w3-bar-item w3-button"><b></b> Submit New Blog</a>
+    <a href="/signup"class="w3-bar-item w3-button"><b></b> Sign Up </a>
+    
+
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/blog" class="w3-bar-item w3-button">Friend Feed</a>
+      <a href="/logout" class="w3-bar-item w3-button">Log Out</a>
+      <a href="/" class="w3-bar-item w3-button">Other Friends</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">>
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Your Blog Here</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+    <br>
+    <br>
+    <br>
+<div class="w3-content w3-padding" style="max-width:1564px">
+  {% block content %}
+  {% endblock %}
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+</footer>
+
+</body>
+</html>
